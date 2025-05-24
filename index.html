@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리들의 소통</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-gamma {
+      background: linear-gradient(180deg, #001f3f 0%, #f8f8f0 100%);
+    }
+    @font-face {
+      font-family: 'Chosun Centennial';
+      src: url('./fonts/ChosunCentennial.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    .font-subtitle {
+      font-family: 'Chosun Centennial', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gamma text-gray-900">
+  <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-white">우리들의 소통</h1>
+    <button id="loginBtn" class="bg-white text-[#001f3f] font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition">
+      로그인
+    </button>
+  </nav>
+  <section class="max-w-4xl mx-auto mt-16 text-center text-white px-6">
+    <h2 class="text-4xl font-bold mb-4">소통은 우리를 하나로 만듭니다</h2>
+    <p class="font-subtitle text-xl mb-6">함께 나누는 진심, 연결되는 이야기</p>
+    <p class="text-lg max-w-2xl mx-auto">우리들의 소통은 사람들이 서로의 이야기를 공감하고 나누는 공간입니다.</p>
+  </section>
+  <footer class="max-w-6xl mx-auto mt-32 py-6 text-center text-white text-sm">
+    ⓒ 2025 우리들의 소통. 모든 권리 보유.
+  </footer>
+  <script>
+    document.getElementById('loginBtn').addEventListener('click', function() {
+      alert('로그인 페이지로 이동합니다.');
+    });
+  </script>
+</body>
+</html>
